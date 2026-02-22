@@ -3,7 +3,7 @@ const CACHE_NAME = 'system-grade9-v1';
 
 // These are the files the "Battery" will keep charged and ready
 const assetsToCache = [
-  'Grade 9-THE SYSTEM.html',
+  'index.html',
   'manifest.json',
   'sw.js'
 ];
