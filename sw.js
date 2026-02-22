@@ -1,3 +1,11 @@
+// Add this at the top of sw.js
+self.addEventListener('install', (event) => {
+  self.skipWaiting(); // Forces the waiting service worker to become the active one
+});
+
+self.addEventListener('activate', (event) => {
+  event.waitUntil(clients.claim()); // Immediately takes control of all open tabs
+});
 // This is the name of your app's memory storage
 const CACHE_NAME = 'system-grade9-v2';
 
@@ -37,4 +45,5 @@ self.addEventListener('fetch', (event) => {
     })
   );
 });
+
 
