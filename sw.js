@@ -1,5 +1,5 @@
 // This is the name of your app's memory storage
-const CACHE_NAME = 'system-grade9-v1';
+const CACHE_NAME = 'system-grade9-v2';
 
 // These are the files the "Battery" will keep charged and ready
 const assetsToCache = [
@@ -37,3 +37,4 @@ self.addEventListener('fetch', (event) => {
     })
   );
 });
+
